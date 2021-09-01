@@ -1,2 +1,0 @@
-AVISO: para o APIs funcionar, é preciso abrir o site com o Live Server. Abrindo o site diretamente do arquivo zipado não dará certo.
-Após abrir o site, no endereço é necessário tirar os números que vêm antes de ":5500/indexx.html" e substituir esses números por "localhost".
