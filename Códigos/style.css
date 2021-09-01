@@ -18,7 +18,7 @@ body button{
 }
 
 .header{
-    background-color: rgb(10, 161, 103);
+    background-color: rgb(128, 21, 21);
     display: flex;
     text-decoration: none;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@ body button{
 }
 
 .footer{
-    background-color: green;
+    background-color: rgb(128, 21, 21);
     margin: auto;
 }
 
