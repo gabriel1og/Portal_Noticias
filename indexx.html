@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>Portal de Noticias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e1a878a13.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+     <header class="header">
+        <h1>Portal de Noticias</h1>
+        <nav>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-chevron-circle-up"></i>
+            </label>
+        
+            <ul class="menu">
+                <li><a href="#" id="Brasil" onclick="executaBrasil();">HOME</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Divulgação</a></li>
+                    </div>
+                    
+                </li>
+                
+            </ul>
+       </nav>
+    </header>
+
+    <section class="grid">
+
+    <div class="secções">
+        <h2>PESQUISAS  SALVAS</h2>
+        <ul>
+            <li><input type="text" id="txtPesquisa" list="historico">
+            <button id="btnPesquisa"  onclick="executaPesquisa();">Search</button></li>
+            <li><a href="#" id="Tecnologia" onclick="executaTecnologia();">Tecnologia</a></li> 
+            <li><a href="#" id="Esportes" onclick="executaEsportes();">Esportes</a></li> 
+            <li><a href="#" id="Saúde" onclick="executaSaúde();">Saúde</a></li>
+        </ul>
+        <datalist id="historico">
+            <option value="Tecnologia"></option>
+            <option value="Esportes"></option>
+            <option value="Saúde"></option>
+        </datalist>
+        -------------------------------------
+        <h3>CATEGORIAS</h3>
+        <ul class="países">
+           <li><a href="#" id="Portugal" onclick="executaPortugal();">Portugal</a></li> 
+           <li><a href="#" id="França" onclick="executaFrança();">França</a></li> 
+           <li><a href="#" id="Espanha" onclick="executaEspanha();">Espanha</a></li> 
+           <li><a href="#" id="Canadá" onclick="executaCanadá();">Canadá</a></li> 
+        </ul>
+    </div>
+
+    <div id="tela">
+        <div class="box-noticia">
+            <img src="https://www.esporteinterativo.com.br/__export/1590261256397/sites/esporteinterativo/img/2020/05/23/49920800191_bf61e2b839_b_crop1590261010131.jpg_2060162980.jpg" alt="">
+            <span class="titulo">Eleições terminam e Sérgio Rodrigues é o novo presidente do Cruzeiro pelos próximos 2 anos.</span></br>
+            <span class="creditos">15/06/20 - Globo Esporte - Rogério Machado</span></br>
+            <span class="text">Novo presidente tem o desafio de reerguer o Cruzeiro que passa por sua maior crise em toda a história, devendo mais de 800 milhões de reais em ações na FIFA.
+                <a href="#">Leia mais...</a></br>
+            </span> 
+        </div>
+
+        <script src="not.js"></script>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <p>Todos os direitos reservados</p>
+            <p>o</p>
+            <p>o</p>
+            <p>o</p>
+        </div>
+    </footer>
+ </body>
+</html>

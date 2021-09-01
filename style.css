@@ -1,0 +1,363 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+body h1{
+    color: whitesmoke;
+    font-family: Broadway;
+    text-align: left;
+}
+
+body button{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.header{
+    background-color: rgb(10, 161, 103);
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.menu{
+    display: flex;
+    align-content: center;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 30px;
+    color: whitesmoke;
+}
+
+.footer{
+    background-color: green;
+    margin: auto;
+}
+
+#txtPesquisa{
+    margin-right: -30.5px;
+    margin-top: 2px;
+}
+
+/* Menu - Fim */
+
+/* SECÇÕES - Início */
+.secções{
+    max-width: 100%;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 25px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.países{
+    padding: 0px;
+    align-content: right;
+    
+}
+
+/* SECÇÕES - Fim */
+
+/* Regras do Componente box-noticia */
+
+.box-noticia{
+    max-width: 100%;
+    margin-top: 10px 0px;
+    text-align: justify;
+    align-content: left;
+    margin-right: 290px;
+    overflow: auto;
+    color: white;
+    clear: both;
+}
+
+.box-noticia img{
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+    width: 180px;
+    height: 130px;
+}
+
+.box-noticia .titulo{
+    font-weight: 700;
+}
+
+.box-noticia .creditos{
+    color:red;
+}
+/* Fim do box-noticia */
+
+/* Menu Mobile - Inicio */
+
+#menuToggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:600px){
+
+    .header{
+        padding: 20px;
+        top: 0px;
+        width: 100%;
+    }
+
+    .header nav{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #menuToggle{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: -20px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        background: rgba(0, 0, 0, 0.938);
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .menu li{
+        display: block;
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    .menu li a{
+        display: block;
+        text-align: center;
+        margin-top: -220px;
+        margin-left: -205px;
+        width: 100%;
+    }
+
+    
+
+    .menu-icon{
+        display: block;
+        color: white;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top: 50px;
+        right: -150px;
+        line-height: 60px;
+        z-index: 999;
+    }
+
+    .menu-icon i{
+        font-size: 1.7em;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+    
+    #menuToggle:not(checked) ~ label i:first-child{
+        display: block;
+    }    
+
+    #menuToggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+
+    #menuToggle:checked ~ ul{
+        height: 100%;
+    }
+
+}
+
+/* Menu Mobile - Fim */
+
+ /* CSS Grid 1 - Inicio */
+
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    text-decoration: none;
+
+}
+
+.grid > div{
+    flex: 1 1 1200px;
+    margin: 5px;
+}
+
+.secções{
+    display: grid;
+    margin-right: 200px;
+    grid-column: 3;
+    grid-row: 1/2;
+    max-width: auto;
+    
+}
+
+.secções > h2{
+    font-size: 15px;
+    font-family: 'Wide Latin';
+}
+
+.secções > h3{
+    font-size: 15px;
+    font-family: 'Wide Latin';
+}
+
+.países{
+    margin-left: 45px;
+}
+
+#tela{
+     display: grid;
+     grid-column: 1/4 ;
+     margin-top: -460px;
+     margin-right: 100px;
+     align-items: justify;
+     grid-gap: 10px;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:600px){
+
+    .grid{
+       grid-template-columns: 3fr 1fr;
+    }
+    .header{
+        background-color: crimson;
+        max-height: 10px;
+    }
+
+    .header > h1{
+        font-size: 20px;
+        margin-top: -5px;
+        margin-left: -15px;
+    }
+
+    .menu-icon{
+        margin-top: -30px;
+        margin-right: 200px;
+    }
+
+    #tela{
+        margin-right: -320px;
+        margin-top: -5px;
+        padding-right: 160px;
+        display: grid;
+        font-size: 15px;
+        grid-column: 1/4;
+        grid-gap: 10px;
+        max-width: auto;
+    }
+
+    .secções{
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-right: 100px;
+        font-size: 15px;  
+    }
+
+    .secções > h2{
+        margin-right: 15px;
+        font-size: 15px;
+        font-family: 'Wide Latin';
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1024px){
+
+    .menu{
+        display: flex;
+        margin-top: -10px;
+    }
+
+    
+    .header{
+        background-color:rgb(104, 104, 214);
+        max-height: 0px;
+    }   
+
+    .header > h1{
+        font-size: 40px;
+        margin-top: -10px;
+        margin-left: -15px;
+    }
+    
+    #tela{
+        display: grid;
+        grid-column: 1/4 ;
+        margin-top: -460px;
+        margin-right: 100px;
+        align-items: justify;
+        grid-gap: 10px;
+    }
+
+    .secções > .países{
+        padding-left: 0px;
+        margin-left: 45px;
+    }
+
+    .secções{
+        display: grid;
+        margin-left: 400px;
+        grid-column: 3;
+        grid-row: 1/2;
+        max-width: auto;  
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1300px){
+
+    .menu{
+        
+        display: flex;
+        text-decoration: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+/* CSS Grid 1 - Fim */
